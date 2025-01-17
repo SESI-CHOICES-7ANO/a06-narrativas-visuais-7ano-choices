@@ -1,0 +1,218 @@
+// Utilitários ------------------------------------
+
+// Container ------------------------------------
+.container {
+  max-width: 1180px;
+  width: 90%;
+  &--980{
+    margin: 0 auto;
+    max-width: 980px;
+    width: 90%;
+  }
+  &--780 {
+    margin: 0 auto;
+    max-width: 780px;
+    width: 90%;
+  }
+  &--580 {
+    margin: 0 auto;
+    max-width: 580px;
+    width: 90%;
+  }
+}
+
+// Cor texto ------------------------------------
+
+.default-text{
+  color: #3d4d58 !important;
+}
+.purple-text {
+  color: $primary-color !important;
+}
+
+.blue-text {
+  color: $secondary-color !important;
+}
+
+.orange-text {
+  color: $tertiary-color !important;
+}
+
+.green-text {
+  color: $quaternary-color !important;
+}
+
+.purple-blue-text {
+  background-image: linear-gradient(to right, #5758e3 25%, #6fb8ef 100%);
+  color: transparent;
+  background-clip: text;
+  display: inline-flex;
+}
+.blue-green-text {
+  background-image: linear-gradient(to left, #dfff5a -14.11%, #6fb8ef 87.37%);
+  color: transparent;
+  background-clip: text;
+  display: inline-flex;
+}
+.orange-purple-text {
+  background-image: linear-gradient(to right, #ff624a 10.04%, #5758e3 89.74%);
+  color: transparent;
+  background-clip: text;
+  display: inline-flex;
+}
+
+
+// Gradiente Fundo ------------------------------------
+
+.purple-blue-bg {
+  background-image: linear-gradient(to right, #5758e3 25%, #6fb8ef 100%);
+}
+.blue-green-bg {
+  background-image: linear-gradient(to left, #dfff5a -14.11%, #6fb8ef 87.37%);
+}
+.orange-purple-bg {
+  background-image: linear-gradient(to right, #ff624a 10.04%, #5758e3 89.74%);
+}
+.purple-orange-bg {
+  background-image: linear-gradient(to right, #5758e3 10%, #ff624a 90%);
+}
+.dark-gray-light-bg {
+  background-image: linear-gradient(to right, #3d4d58 0, #6c7981 100%) !important;
+}
+
+// Cor Fundo ------------------------------------
+
+.bg-azul {
+  background-color: $secondary-color;
+}
+.bg-green {
+  background-color: $quaternary-color;
+}
+.bg-gray {
+  background-color: #eff1f2;
+}
+.bg-orange {
+  background-color: $tertiary-color;
+}
+
+.bg-orange-strong {
+  color: white;
+  background-color: $tertiary-color;
+}
+
+.bg-purple {
+  background-color: var(--primary-color);
+}
+
+
+
+
+// Flex Box ALinhamento ------------------------------------
+
+.flex--column {
+  flex-direction: column;
+  display: flex;
+}
+.flex--column-mobile{
+  @include mobile {
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+.flex--align-start {
+  align-items: start;
+  display: flex;
+}
+
+.flex--align-center {
+  align-items: center;
+  display: flex;
+}
+
+.flex--align-center-mobile  {
+  @include mobile {
+    align-items: center;
+    display: flex;
+  }
+}
+.flex--justify-start {
+  justify-content: start;
+  display: flex;
+}
+.flex--justify-center {
+  justify-content: center;
+  display: flex;
+}
+
+.flex--justify-center-mobile{
+  @include mobile {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.flex--column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flex--align-end {
+  display: flex;
+  align-items: end;
+}
+
+
+// IMG ------------------------------------
+
+
+.img-circle {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  width: 100%;
+  min-width: 40px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+.img-rounded {
+  border-radius: 23px;
+}
+
+.pulse {
+  object-fit: contain;
+  object-position: center center;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% {
+      //	transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      //	transform: scale(1);
+      box-shadow: 0 0 0 12px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      //	transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+.flip {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.shadow {
+  box-shadow: 3px 3px 20px rgba(66, 66, 66, 0.6) !important;
+  border: 1px solid rgba(165, 165, 165, 0.8) !important;
+}

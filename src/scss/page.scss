@@ -1,0 +1,227 @@
+// ---------------------------------------------------------
+// Tratamento Aula específica
+// ---------------------------------------------------------
+
+#introdução {
+  background-color: #eff1f2;
+}
+
+
+
+
+.clicker {
+  cursor: pointer;
+  //  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  animation: pulse 1s infinite;
+  transition: all 0.4s ease 0s;
+}
+
+.clicker:hover {
+  background: #f1e86f;
+  border-color: #f6b93b !important;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  //  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  animation: pulse 1s infinite;
+}
+
+
+
+
+.full-img{
+  background-image: url("../img/gif-11.webp");
+}
+
+
+
+
+
+
+#house {
+  background-image: url("../img/house.webp");
+  // background-size: cover;
+  // background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: -25px;
+  position: relative;
+  z-index: 1;
+
+  .custom-divider {
+    margin-bottom: -10px;
+  }
+}
+
+#aula {
+  border-radius: 23px;
+  background-color: var(--md-sys-color-background);
+  margin-top: -35px;
+  margin-bottom: -35px;
+  position: relative;
+  z-index: 10;
+
+  .custom-divider {
+    margin-bottom: -10px;
+  }
+}
+
+#tipos {
+  .full-img {
+    background-image: url("../img/sabia.jpg");
+  }
+}
+
+
+
+
+.linha {
+  margin-top: -24px;
+
+  &-2up {
+    z-index: 9;
+    position: relative !important;
+  }
+
+  &-1up {
+    z-index: 7;
+    position: relative !important;
+  }
+
+  &-1dwn {
+    z-index: 5;
+    position: relative !important;
+  }
+
+  &-2dwn {
+    z-index: 3;
+    position: relative !important;
+  }
+}
+
+
+
+
+
+
+
+
+.custom-divider__wave {
+  width: 100%;
+  margin-top: -2px;
+}
+
+.mission-img {
+  width: 100%;
+  max-width: 700px;
+}
+
+.pulse {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  animation: pulse 1s infinite;
+  overflow: hidden;
+}
+
+// ALTERAR CLASSES
+.purple-bg {
+  background-color: #5758e3;
+}
+
+.green-bg {
+  background-color: #dfff5a;
+}
+
+.blue-bg {
+  background-color: #6fb8ef;
+}
+
+
+.blue-green-bg {
+  background-image: var(--gradient-blue-green);
+}
+
+.purple-blue-bg {
+  background-color: var(--gradient-purple-blue);
+}
+
+.orange-purple-bg {
+  background-color: var(--gradient-orange-purple);
+}
+
+.dark-gray-light-bg {
+  background-image: var(--gradient-dark-gray-light);
+}
+
+.purple-orange-bg {
+  background-color: var(--gradient-purple-orange);
+}
+
+.blue-lighten {
+  background-color: var(--md-ref-palette-secondary50);
+}
+
+
+
+
+
+
+
+.question-matriz {
+  overflow-x: auto;
+
+  table {
+    table-layout: auto;
+  }
+  th {
+    background-color: var(--tertiary-color);
+    color: #eff1f2;
+  }
+  td {
+    background-color: #fff;
+    text-align: center;
+  }
+  .clicavel {
+    cursor: pointer;
+  }
+
+  th,
+  td {
+    border: 1px solid #b9b9b9;
+  }
+}
+
+#capa{
+  background-image: url("../img/Rectangle 370.webp");
+  // background-size: cover;
+  // background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1920 / 600;
+  width: 100%;
+
+  @include mobile{
+    aspect-ratio: unset;
+   
+  }
+}
+
+.full-img{
+
+  background-image: url("../img/Group 212.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#house2{
+
+  background-image: url("../img/Rectangle 372.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#concluir-wrap{
+  background-image: url("../img/image 16.webp");
+  // background-size: cover;
+  // background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

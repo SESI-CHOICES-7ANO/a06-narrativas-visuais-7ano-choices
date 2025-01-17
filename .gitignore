@@ -1,0 +1,16 @@
+# Desconsiderar dist
+dist
+
+# Desconsiderar dependências
+node_modules
+
+# Desconsiderar arquivos de cache
+/.cache
+/.idea
+.vscode
+
+# Desconsiderar arquivos de configuração local
+.env*
+
+# Desconsiderar arquivos de backup
+*.swp

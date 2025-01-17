@@ -1,0 +1,28 @@
+// Footer ------------------------------------
+
+footer.card{
+    @include tablet {
+    padding: 0;
+    }
+  }
+  footer {
+    border-radius: $border-radius-lg $border-radius-lg 0 0 !important;
+    padding: map-get($spacing-values, "60");
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include tablet {
+      padding: map-get($spacing-values, "60");
+      .container {
+        flex-direction: column;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        div {
+          padding: 16px 16px;
+          max-height: 65px;
+        }
+      }
+    }
+  }

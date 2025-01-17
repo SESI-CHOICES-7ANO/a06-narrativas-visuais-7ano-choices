@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ciberespaço e storytelling: espaços virtuais e suas histórias"
+    />
+    <meta name="author" content="SESI" />
+    <title>
+      Aula 06 | Ciberespaço e storytelling: espaços virtuais e suas histórias
+    </title>
+    <link rel="icon" type="image/png" href="src/img/core/Favicon.png" />
+
+    <!-- Fonts Gamay Editorial -->
+    <link rel="stylesheet" href="https://use.typekit.net/gfu5jar.css" />
+
+    <!--Import Google Icon Font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+    />
+
+    <!-- CSS -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="src/css/main.css"
+      media="screen"
+    />
+
+    <!-- Vue DEV MODE -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+
+    <!-- Vue PROD MODE -->
+    <script
+      rel="preconnect"
+      src="https://unpkg.com/vue@3/dist/vue.global.prod.js"
+    ></script>
+
+    <!-- Scorm JS -->
+    <script src="src/js/scorm/APIWrapper.js"></script>
+    <script src="src/js/scorm/SCOFunctions.js"></script>
+    <script src="src/js/scorm/scorm-app.js"></script>
+
+    <link rel="preload" href="src/img/Hero-m.webp" as="image" />
+    <link rel="preload" href="src/img/Hero-s.webp" as="image" />
+
+    <!-- Materialize JS -->
+    <script
+      type="text/javascript"
+      src="src/js/materialize/materialize.js"
+      defer
+    ></script>
+    <!-- AOS JS -->
+    <script
+      type="text/javascript"
+      src="src/js/aos-master/aos.js"
+      defer
+    ></script>
+
+    <!-- App.js JS customizado aqui -->
+    <script type="module" src="src/js/app.js"></script>
+
+    <!-- AOS Animation -->
+    <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- loading ---------------------------------- -->
+      <div id="loading">
+        <div class="spinner"></div>
+      </div>
+      <div id="content">
+        <!-- Sidebar ---------------------------------- -->
+        <!-- <sidebar></sidebar> -->
+
+        <!-- Navbar ---------------------------------- -->
+        <navbar></navbar>
+
+        <!-- Hero Banner ----------------------------------->
+        <hero
+          >Ciberespaço e <i>storytelling</i>: espaços virtuais e suas histórias</hero
+        >
+
+        <!-- Primeiro Conteúdo ----------------------------->
+        <div id="aula">
+          <div class="container py-80">
+            <div class="container--medium center-align">
+              <h2 class="purple-text center-align mt-24" data-aos="zoom-in">
+                👉 Nesta aula:
+              </h2>
+              <ul class="center-align" style="list-style: none; padding: 0">
+                <li>
+                  <p style="margin-top: -12px">
+                    &bull; <i>Storytelling</i> na construção do ciberespaço;
+                  </p>
+                </li>
+                <li>
+                  <p style="margin-top: -12px">&bull; Metaverso;</p>
+                </li>
+                <li>
+                  <p style="margin-top: -12px">
+                    &bull; Pessoas influenciadoras;
+                  </p>
+                </li>
+                <li>
+                  <p style="margin-top: -12px">
+                    &bull; Construção de Identidade nas redes.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <img-side-card
+              class="py-60"
+              src="src/img/Rectangle 163.webp"
+              alt="Choices"
+              card_class="bg-orange"
+            >
+              <!-- Conteúdo textual -->
+              <div class="py-24 white-text">
+                <p class="body1 green-text">
+                  <b>Narrativas virtuais</b>
+                </p>
+                <br />
+
+                <p>E aí? Tudo certo?</p>
+                <br />
+                <p>
+                  Nesta aula, vamos dar um passeio pelo ciberespaço explorando
+                  mais características do uso de narrativas para construí-lo.
+                </p>
+              </div>
+            </img-side-card>
+          </div>
+        </div>
+
+        <div
+          id="intro"
+          class="py-80 pt-144 white-text"
+          style="background-color: #3d4d58"
+        >
+          <div class="container--780">
+            <div class="row">
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <h3 data-aos="fade-up" class="green-text">Ciberespaço e <i>Storytelling</i></h3>
+                  <p>
+                    Falamos sobre algumas ferramentas e modos de contar
+                    histórias usando a Internet. Agora, vamos um pouco mais
+                    além.
+                  </p>
+                </div>
+              </div>
+              <div class="col m6 s12 flex--justify-center">
+                <img
+                  src="src/img/Group 204.webp"
+                  class="w100 m-w320"
+                  alt="Imagem da Choices"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="row mt-40">
+              <div class="col m4 s12 flex--justify-center">
+                <img
+                  src="src/img/Group 222.webp"
+                  class="w100 m-w170"
+                  alt="Imagem da Choices"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <p class="body1"><b> Um universo de histórias </b></p>
+                  <p>
+                    Já parou para pensar sobre as narrativas que vivenciamos
+                    simplesmente por ESTARMOS na Internet?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="capa" class="pb-80  white-text">
+
+          <!-- divisor ----------------------------------->
+          <img
+            src="src/img/d1.webp"
+            style="margin-top: -3px"
+            alt="Divisor"
+            class="w100 mb-80"
+          />
+
+          <div class="container--780 mt-60 mt-240-mobile">
+            <div class="row">
+              <div class="col offset-m6 m6 s12">
+                <h3 data-aos="fade-up" class="green-text">Metaverso e realidades virtuais</h3>
+                <p>
+                  Uma narrativa virtual famosa da Internet e da era digital é o
+                  próprio conceito de METAVERSO ou REALIDADE VIRTUAL.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="metaverso" class="py-80 white-text bg-purple">
+          <div class="container--780">
+            <div
+              class="mission-tag pr-24 pl-24 mt-40"
+              style="max-width: fit-content"
+            >
+              <img
+                src="src/img/mission.svg"
+                loading="lazy"
+                alt="ícone bandeira"
+              />
+              <p class="purple-text pt-4"><b>Missão 1</b></p>
+            </div>
+
+            <p>Você já ouviu falar em METAVERSO ou REALIDADE VIRTUAL?</p>
+            <p>
+              <b
+                >Anote no caderno o que você acha que isso é ou o que já ouviu
+                falar a respeito. Da sua cabeça mesmo, sem pesquisar ou
+                perguntar, hein! ✍️</b
+              >
+            </p>
+          </div>
+
+          <div style="background-color: #7878e8">
+            <div class="container--780">
+              <div class="row py-60 mt-40">
+                <div class="col m7 s12">
+                  <img
+                    src="src/img/shutterstock_2208724161 1.webp"
+                    class="w100"
+                    alt="Imagem da Choices"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="col m5 s12 flex--align-center">
+                  <div>
+                    <h3 data-aos="fade-up" class="green-text">Metaverso</h3>
+                    <p>
+                      Antes de ser o nome de uma empresa, o metaverso é um
+                      conceito difundido pelas tecnologias digitais.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container--780">
+            <div class="my-60">
+              <carousel></carousel>
+            </div>
+
+            <p class="body1 white-text">
+              <b> Exemplos de metaversos </b>
+            </p>
+
+            <div class="row">
+              <div class="col m6 s12">
+                <div
+                  class="box-attention box-attention--white default-text center-align"
+                >
+                  <p>
+                    <b>Alguns tipos de jogos online;</b>
+                  </p>
+                </div>
+              </div>
+              <div class="col m6 s12">
+                <div
+                  class="box-attention box-attention--white default-text center-align"
+                >
+                  <p>
+                    <b>Plataformas interativas como Roblox;</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-24">
+              <div class="col m6 s12">
+                <div
+                  class="box-attention box-attention--white default-text center-align"
+                >
+                  <p>
+                    <b>Redes sociais;</b>
+                  </p>
+                </div>
+              </div>
+              <div class="col m6 s12">
+                <div
+                  class="box-attention box-attention--white default-text center-align"
+                >
+                  <p>
+                    <b>Realidades aumentadas.</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-40">
+              <div class="col m6 s12 flex--justify-center">
+                <img
+                  src="src/img/Group 233.webp"
+                  class="w100 m-w270"
+                  alt="Imagem da Choices"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <h3 data-aos="fade-up">Identidade e avatares</h3>
+                  <p>
+                    Outro aspecto dos metaversos é a necessidade de criação de
+                    avatares (versões digitais) que representam a pessoa. Isso
+                    existe em todos os espaços coletivos de socialização nas
+                    redes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-40">
+              <div class="col m8 s12 flex--align-center">
+                <div>
+                  <p class="body1"><b> 👉 Avatares e histórias </b></p>
+                  <p>
+                    Nossas versões virtuais carregam histórias. Algumas vezes
+                    consistem em versões que construímos de nós mesmas(os).
+                  </p>
+                </div>
+              </div>
+
+              <div class="col m4 s12 flex--justify-center">
+                <img
+                  src="src/img/Group 234.webp"
+                  class="w100 m-w170"
+                  alt="Imagem da Choices"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="row mt-40">
+              <div class="col m6 s12">
+                <ul class="collapsible collapsible--mission">
+                  <li class="">
+                    <div
+                      class="pulse collapsible-header waves-effect waves-light grow flex--justify-center flex--align-center"
+                      tabindex="0"
+                      style="background-image: none"
+                    >
+                      <p class="center-align"><b>Narrativas Ficcionais</b></p>
+                    </div>
+                    <div
+                      class="collapsible-body bg-purple"
+                      style="
+                        transition: max-height 300ms ease-out;
+                        max-height: 0px;
+                      "
+                    >
+                      <div class="py-40">
+                        <img
+                          class="circle"
+                          src="src/img/Ellipse 40-1.webp"
+                          alt="Choices"
+                          loading="lazy"
+                          style="display: block; margin: 0px auto"
+                        />
+                        <p class="pt-12">
+                          E algumas vezes criamos identidades completamente virtuais, seja para um jogo online, para algum tipo de brincadeira de faz de conta digital, ou para compor uma personagem.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col m6 s12">
+                <ul class="collapsible collapsible--mission">
+                  <li class="">
+                    <div
+                      class="pulse collapsible-header waves-effect waves-light grow flex--justify-center flex--align-center"
+                      tabindex="0"
+                      style="background-image: none"
+                    >
+                      <p class="center-align"><b>Influencers</b></p>
+                    </div>
+                    <div
+                      class="collapsible-body bg-purple"
+                      style="
+                        transition: max-height 300ms ease-out;
+                        max-height: 0px;
+                      "
+                    >
+                      <div class="py-40">
+                        <img
+                          class="circle"
+                          src="src/img/Ellipse 40.webp"
+                          alt="Choices"
+                          loading="lazy"
+                          style="display: block; margin: 0px auto"
+                        />
+                        <p class="pt-12">
+                          Influenciadoras(es) digitais, pessoas famosas como
+                          influencers das redes, são exemplos de avatares que
+                          misturam fatos de suas histórias de vida reais com
+                          personagens que encarnam na vida das redes.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row mt-24-mobile">
+              <div class="col m6 s12">
+                <ul class="collapsible collapsible--mission">
+                  <li class="">
+                    <div
+                      class="pulse collapsible-header waves-effect waves-light grow flex--justify-center flex--align-center"
+                      tabindex="0"
+                      style="background-image: none"
+                    >
+                      <p class="center-align"><b>Responsabilidade social</b></p>
+                    </div>
+                    <div
+                      class="collapsible-body bg-purple"
+                      style="
+                        transition: max-height 300ms ease-out;
+                        max-height: 0px;
+                      "
+                    >
+                      <div class="py-40">
+                        <p class="pt-12">
+                          Onde a realidade termina e narrativa começa nem sempre
+                          é perceptível. É por isso que essas pessoas devem ter
+                          grandes compromissos com ética e valores.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col m6 s12">
+                <ul class="collapsible collapsible--mission">
+                  <li class="">
+                    <div
+                      class="pulse collapsible-header waves-effect waves-light grow flex--justify-center flex--align-center"
+                      tabindex="0"
+                      style="background-image: none"
+                    >
+                      <p class="center-align">
+                        <b>Seguidoras(es) e senso crítico</b>
+                      </p>
+                    </div>
+                    <div
+                      class="collapsible-body bg-purple"
+                      style="
+                        transition: max-height 300ms ease-out;
+                        max-height: 0px;
+                      "
+                    >
+                      <div class="py-40">
+                        <p class="pt-12">
+                          E, para quem acompanha as narrativas virtuais criadas
+                          por essas pessoas, é necessário exercitar todos os
+                          dias o senso crítico.
+                        </p>
+                        <p>
+                          Afinal, nem todo conteúdo das redes e nem todas as
+                          pessoas influenciadoras estão criando narrativas
+                          saudáveis. <b>Fique de olho!</b>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="body1">
+              <b> 👉 Usos saudáveis e socialmente responsáveis </b>
+            </p>
+            <p class="mb-60">
+              Quando essas ferramentas estão a serviço de criar conteúdos
+              eticamente responsáveis e brincadeiras em que as narrativas e
+              personagens criadas não são ofensivas de algum modo, elas podem
+              ser utilizadas para expandir nossa criatividade, nosso senso de
+              identidade, entreter e educar outras pessoas (de um jeito
+              divertido)!
+            </p>
+
+            <question-checkbox></question-checkbox>
+
+            <div class="center-align flex--align-center flex--column mt-60">
+              <div
+                class="mission-tag pr-24 pl-24 mt-40"
+                style="max-width: fit-content"
+              >
+                <img
+                  src="src/img/mission.svg"
+                  loading="lazy"
+                  alt="ícone bandeira"
+                />
+                <p class="purple-text pt-4"><b>Missão 2</b></p>
+              </div>
+              <p>
+                Você já inventou uma versão alternativa de si mesma(o) nas
+                redes? Por qual motivo? Anote no caderno e comente com seus/suas
+                colegas.
+              </p>
+            </div>
+
+            <!-- Você sabia 02 / horizontal ----------------------------------->
+            <div class="card-03 card-03--horizontal pt-60">
+              <img
+                src="src/img/Rectangle 280.webp"
+                alt="Você sabia?"
+                loading="lazy"
+                class="card-03--main-img"
+              />
+              <div class="card-03--content dark-gray-light-bg">
+                <p class="body1 green-text flex--align-center">
+                  <span class="emote-box">😮</span><b>Você sabia?</b>
+                </p>
+                <p><b>
+                  Cibernarrativas
+                </b></p>
+                <p class="white-text">
+                  Como vimos em aulas anteriores, o ciberespaço permitiu novas
+                  configurações narrativas diferenciadas mediadas por hipertexto
+                  e participação. Dê uma olhada nessa matéria sobre isso:
+                </p>
+                <p>
+                  <a
+                    href="https://www.infoescola.com/literatura/cibernarrativa/"
+                    target="_blank"
+                    class="btn text green-text"
+                    >Acesse aqui</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- House ------------------------->
+        <div id="house2" style="line-height: 0">
+          <!-- divisor ----------------------------------->
+          <img
+            src="src/img/d2.webp"
+            style="margin-top: -3px"
+            alt="Divisor"
+            class="w100"
+          />
+          <div class="container pt-40">
+            <div class="row py-184 py-96-mobile">
+              <div class="col m3 s12"></div>
+              <div class="col m6 s12">
+                <h3
+                  class="green-text"
+                  style="margin-bottom: 40px"
+                  data-aos="zoom-in"
+                >
+                O ciberespaço como lugar para as comunidades
+                </h3>
+                <p class="white-text">
+                  Outro aspecto que faz do ciberespaço um lugar interessante para a criação de narrativas é a possibilidade de expandir a participação das comunidades e permitir que elas contem histórias sobre si mesmas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="mundo" class="py-80" style="line-height: 0;">
+          <div class="container--780">
+            <div class="row">
+              <div class="col m6 s12">
+                <div>
+                  <div class="card card--purple-shadow card--transparent">
+                    <div class="card-content">
+                      <div class="card-title blue-text">
+                        <p>Grupos marginalizados</p>
+                      </div>
+                      <p>
+                        Alguns grupos sociais em nossa sociedade são
+                        marginalizados e nem sempre aparecem nas narrativas
+                        oficiais presentes na nossa cultura.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col m6 s12">
+                <div class="card card--purple-shadow card--transparent">
+                  <div class="card-content">
+                    <div class="card-title blue-text">
+                      <p>Protagonismos diversos</p>
+                    </div>
+                    <p>
+                      Apropriar-se de espaços como os metaversos, as redes
+                      sociais, jogos online, entre outros, para poder trazer
+                      visibilidade a esses grupos historicamente esquecidos
+                      auxilia no protagonismo e em processos de mudança social.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-40">
+              <div class="col m6 s12 flex--justify-center">
+                <img
+                  src="src/img/Group 235.webp"
+                  class="w100 m-w300"
+                  alt="Imagem da Choices"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <h3 data-aos="fade-up" class="blue-text">Daqui até o outro lado do mundo</h3>
+                  <p>
+                    Com a internet, é possível criarmos esses espaços virtuais
+                    que conectam pessoas que em outros momentos da história
+                    jamais poderiam se encontrar.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-40">
+              <h3 data-aos="fade-up" class="blue-text">Multiculturalismo</h3>
+              <p>
+                E isso nos leva a outros papos que vamos explorar aqui nessa
+                CHOICES, como as múltiplas culturas e narrativas que fazemos
+                sobre as histórias de diferentes comunidades!
+              </p>
+              <img
+                src="src/img/Group 221.webp"
+                alt="Imagem da Choices"
+                loading="lazy"
+                class="w100"
+              />
+            </div>
+
+            <div>
+              <div
+                class="mission-tag pr-24 pl-24 mt-40"
+                style="max-width: fit-content"
+              >
+                <img
+                  src="src/img/mission.svg"
+                  loading="lazy"
+                  alt="ícone bandeira"
+                />
+                <p class="purple-text pt-4"><b>Missão 3</b></p>
+              </div>
+
+              <p>
+                <b>
+                  Existe algum grupo social que você só conheceu graças ao
+                  contato com o metaverso e as redes na Internet?
+                </b>
+              </p>
+              <p>Anote aí e troque ideia com colegas.</p>
+            </div>
+          </div>
+
+
+         
+        </section>
+
+        <section
+          id="finalizacao"
+          class="py-80"
+          style="background-color: #EFF1F2"
+        >
+          <div class="container center-align">
+            <h3 data-aos="fade-up" class="purple-text">📍 Nesta aula, conversamos sobre:</h3>
+            <ul class="center-align" style="list-style: none; padding: 0">
+              <li>
+                <p style="margin-top: -12px">
+                  &bull; <i>Storytelling</i> na construção do ciberespaço;
+                </p>
+              </li>
+              <li>
+                <p style="margin-top: -12px">&bull; Metaverso;</p>
+              </li>
+              <li>
+                <p style="margin-top: -12px">
+                  &bull; Pessoas influenciadoras;
+                </p>
+              </li>
+              <li>
+                <p style="margin-top: -12px">
+                  &bull; Construção de Identidade nas redes.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <div id="concluir-wrap" class="py-184">
+          <div class="container--580 center-align white-text mb-60">
+            <div class="flex--align-center flex--column">
+              <p class="m-w500">
+                Nesta aula, discutimos o metaverso e identidades nas redes.
+              </p>
+              <h3 data-aos="fade-up" class="m-w500">
+                Nossa próxima aula vai ser uma conversa sobre CULTURA!
+              </h3>
+            </div>
+          </div>
+          <!-- Concluir ---------------------------------->
+          <concluir></concluir>
+        </div>
+
+        <!-- Footer ---------------------------------- -->
+        <app-footer style="margin-top: -40px;"></app-footer>
+      </div>
+    </div>
+  </body>
+</html>

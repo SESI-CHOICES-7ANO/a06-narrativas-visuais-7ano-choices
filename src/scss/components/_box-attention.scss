@@ -1,0 +1,98 @@
+.box-attention {
+  border-radius: $border-radius-lg;
+  padding: 0px 50px;
+  border: 2px solid rgba(87, 88, 227, 0.15);
+  background-color:#f1f1f1;
+
+  
+  // Localização dos cantos retos para simular balões de dialogo (tl, tr, bl, br)
+  &--tl {
+    border-radius: 0px 23px 23px 23px;
+  }
+  &--tr {
+    border-radius: 23px 0px 23px 23px;
+  }
+  &--bl {
+    border-radius: 23px 23px 23px 0px;
+  }
+  &--br {
+    border-radius: 23px 23px 0px 23px;
+  }
+
+  // Cores diferentes
+  &--white {
+    background-color: white;
+  }
+
+  &--gray-strong {
+    background-color: var(--text-color);
+  }
+
+  &--darken-6 {
+    padding: 25px;
+    background-color: #303E46;
+  }
+  
+  &--darken-8 {
+    background-color: #263238;
+  }
+  
+  &--green {
+    background-color: var(--quaternary-color);
+  }
+ 
+  &--greensmall {
+    background-color: var(--quaternary-color);
+    margin-top: -42px;
+    margin-bottom: -25px;
+    position: relative !important;
+    z-index:4;
+  }
+  
+  &--orange {
+    color: var(--tertiary-color);
+    background-color: lighten($tertiary-color, 30%); 
+  }
+  
+  &--orange-strong {
+    color: var(--quaternary-color);
+    background-color: var(--tertiary-color);
+  }
+  
+  &--purple {
+    background-color:lighten($primary-color, 30%);
+  }
+
+  &--purple-strong {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  &--blue {
+    background-color: lighten($secondary-color, 30%); 
+  }
+
+  
+  &--blue-strong {
+    background-color: #6FB8EF;
+  }
+  
+  &--translucid-w {
+    background-color: #ffffff80 !important;
+  }
+
+  &--translucid-k {
+    background-color: #00000080 !important;
+  }
+
+
+  // Media query
+  @include tablet{
+    padding: 18px 24px;
+
+  }
+  @include mobile{
+    padding: 16px 16px;
+
+  }
+}

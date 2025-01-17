@@ -1,0 +1,53 @@
+// Sidebar
+.sidenav {
+  --sidenav-width: 460px;
+  li {
+    a {
+      font-size: $body2-fontsize;
+      line-height: 140%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0;
+      margin: 0 calc(12px + var(--sidenav-padding));
+      padding: calc(12px + var(--sidenav-padding));
+    }
+    a:hover,
+    a:focus {
+      background-color: var(--md-sys-color-surface) !important;
+      color: var(--md-sys-color-primary) !important;
+    }
+  }
+
+
+
+
+  @include tablet {
+    --sidenav-width: 75%;
+
+    .sidenav__general-title{
+      font-size: 12px;
+    }
+    h3{
+      font-size: $h6-fontsize;
+    }
+
+    li a{
+      margin: 0 0;
+    }
+  }
+
+}
+
+.sidenav::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+
+.sidenav::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background: rgb(226, 225, 222); /* color of the tracking area */
+}
+
+.sidenav::-webkit-scrollbar-thumb {
+  background-color: var(--md-sys-color-primary); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(226, 225, 222); /* creates padding around scroll thumb */
+}

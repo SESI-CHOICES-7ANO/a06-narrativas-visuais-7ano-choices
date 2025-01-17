@@ -1,0 +1,162 @@
+.game {
+  background-image: url("../img/game-bg.webp");
+  height: 100vh;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  background-size: cover;
+  &::-webkit-scrollbar {
+    width: 14px; /* width of the entire scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: rgb(226, 225, 222); /* color of the tracking area */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(
+      --md-sys-color-secondary
+    ); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid rgb(226, 225, 222); /* creates padding around scroll thumb */
+  }
+
+  .row {
+    @include mobile {
+      --gap-size: 0.8rem;
+    }
+  }
+  .character {
+    max-width: 270px;
+    width: 100%;
+    max-height: 700px;
+  }
+
+  .character-flip {
+    @extend .character;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+
+  .character-flip2 {
+    max-width: 270px;
+    width: 100%;
+    max-height: 700px;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+  }
+}
+
+.game-ending {
+  background-image: url("../img/mountains-bg.svg");
+  background-color: var(--gradient-purple-blue);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  background-size: cover;
+}
+
+.game-secondary {
+  background-image: url("../img/game-bg.webp");
+  min-height: 100v;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  background-size: cover;
+  &::-webkit-scrollbar {
+    width: 14px; /* width of the entire scrollbar */
+  }
+}
+
+.game-story {
+  &--scene01 {
+    background-image: url("../img/meteoro-01.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    &::-webkit-scrollbar {
+      width: 14px; /* width of the entire scrollbar */
+    }
+  }
+
+  &--scene02 {
+    background-image: url("../img/game-bg.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    &::-webkit-scrollbar {
+      width: 14px; /* width of the entire scrollbar */
+    }
+  }
+
+  &--scene03 {
+    background-image: url("../img/espaco-02.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    &::-webkit-scrollbar {
+      width: 14px; /* width of the entire scrollbar */
+    }
+  }
+
+  &--scene04 {
+    background-image: url("../img/lua-01.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    &::-webkit-scrollbar {
+      width: 14px; /* width of the entire scrollbar */
+    }
+  }
+  &--scene05 {
+    background-image: url("../img/lua-02.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    &::-webkit-scrollbar {
+      width: 14px; /* width of the entire scrollbar */
+    }
+  }
+}
+
+.character {
+  max-width: 270px;
+  width: 100%;
+  max-height: 700px;
+}
+
+.character-flip {
+  @extend .character;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.character-flip2 {
+  max-width: 270px;
+  width: 100%;
+  max-height: 700px;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
+}

@@ -1,0 +1,21 @@
+.bullet-reveal {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  
+    .bullet {
+      border-radius: 50%;
+      width: 24px !important;
+      height: 24px !important;
+      box-shadow: none;
+      border: 0.77px solid #ffffffcc;
+      box-shadow: -3.61px 2.71px 18.97px 0px #1961ac;
+      background: #ffffffb0;
+      position: absolute;
+    }
+  
+    img {
+      max-width: 800px;
+      width: 100%;
+    }
+  }
